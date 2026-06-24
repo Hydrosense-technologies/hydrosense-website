@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydro-Sense Technologies | Water Quality Monitoring System</title>
+  <meta name="description" content="Hydro-Sense Technologies provides autonomous, real-time water quality monitoring solutions using IoT sensors, AI analytics, and unmanned surface vehicles.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Hydro-Sense Technologies Logo">
+        <div class="logo-text">
+          <span class="company-name">Hydro-Sense Technologies</span>
+          <span class="tagline">Water Quality Monitoring System</span>
+        </div>
+      </a>
+      <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Toggle menu">&#9776;</button>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="why-amwa.html">Why AMWA</a>
+        <a href="about.html#contact" class="btn btn-primary">Get in Touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="images/hero.jpg" alt="Water monitoring landscape">
+    </div>
+    <div class="hero-content">
+      <h1>Real-Time <span>Water Quality</span> Intelligence</h1>
+      <p>Autonomous monitoring solutions for lakes, rivers, and catchment systems. Affordable, reliable, and built for the field.</p>
+      <div class="hero-buttons">
+        <a href="about.html" class="btn btn-primary">Discover More</a>
+        <a href="about.html#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT DRIVES US -->
+  <section id="drives">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">The Challenge</p>
+        <h2 class="section-title">What Drives Us</h2>
+        <p class="section-subtitle">Conventional water quality monitoring faces critical limitations that put communities, budgets, and ecosystems at risk.</p>
+      </div>
+      <div class="problems-grid">
+        <div class="problem-card">
+          <div class="problem-icon">&#128176;</div>
+          <h3>Cost &amp; Danger</h3>
+          <p>Conventional monitoring relies on costly manual deployments that expose personnel to hazardous conditions and strain already limited budgets.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">&#9202;</div>
+          <h3>Delayed Intelligence</h3>
+          <p>Significant latency between data collection and lab results means decisions are based on outdated information, delaying critical responses.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">&#128200;</div>
+          <h3>Limited Data</h3>
+          <p>Existing sensors operate with limited visibility, providing an incomplete picture of water quality across large and complex catchment areas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- USV ANIMATION -->
+  <section class="usv-scene">
+    <div class="usv-bg">
+      <!-- Stalactites at top -->
+      <svg class="stalactites" viewBox="0 0 1600 80" preserveAspectRatio="none">
+        <path d="M0,0 L0,20 Q40,18 60,35 Q65,55 70,35 Q90,18 120,20 Q160,22 180,30 Q185,45 190,30 Q210,18 260,20 L260,22 Q300,24 320,35 Q325,50 330,35 Q350,20 400,20 L400,18 Q440,20 480,25 Q485,40 490,25 Q510,18 560,20 Q600,22 640,28 Q645,42 650,28 Q670,18 720,20 Q760,22 800,20 Q840,18 880,25 Q885,38 890,25 Q910,18 960,20 Q1000,22 1040,30 Q1045,48 1050,30 Q1070,18 1120,20 Q1160,22 1200,25 Q1205,40 1210,25 Q1230,18 1280,20 Q1320,22 1360,28 Q1365,44 1370,28 Q1390,18 1440,20 Q1480,22 1520,25 Q1525,38 1530,25 Q1550,18 1600,20 L1600,0 Z" fill="#0d1f33"/>
+      </svg>
+
+      <!-- Bokeh circles -->
+      <div class="bokeh bokeh-1"></div>
+      <div class="bokeh bokeh-2"></div>
+      <div class="bokeh bokeh-3"></div>
+      <div class="bokeh bokeh-4"></div>
+      <div class="bokeh bokeh-5"></div>
+
+      <!-- Background waves -->
+      <svg class="bg-waves" viewBox="0 0 1600 400" preserveAspectRatio="none">
+        <path class="wave wave-1" d="M-100,200 Q100,160 300,200 Q500,240 700,200 Q900,160 1100,200 Q1300,240 1500,200 Q1700,160 1900,200" fill="none" stroke="rgba(56,189,208,0.08)" stroke-width="2"/>
+        <path class="wave wave-2" d="M-100,220 Q100,180 300,220 Q500,260 700,220 Q900,180 1100,220 Q1300,260 1500,220 Q1700,180 1900,220" fill="none" stroke="rgba(56,189,208,0.06)" stroke-width="1.5"/>
+        <path class="wave wave-3" d="M-100,240 Q100,210 300,240 Q500,270 700,240 Q900,210 1100,240 Q1300,270 1500,240 Q1700,210 1900,240" fill="none" stroke="rgba(56,189,208,0.05)" stroke-width="1"/>
+        <path class="wave wave-4" d="M-100,180 Q100,150 300,180 Q500,210 700,180 Q900,150 1100,180 Q1300,210 1500,180 Q1700,150 1900,180" fill="none" stroke="rgba(56,189,208,0.07)" stroke-width="1.5"/>
+      </svg>
+
+      <!-- Data path line with collection points -->
+      <div class="data-path">
+        <svg class="path-line" viewBox="0 0 1200 20" preserveAspectRatio="xMidYMid meet">
+          <line x1="0" y1="10" x2="1200" y2="10" stroke="rgba(56,189,208,0.25)" stroke-width="1" stroke-dasharray="4,6"/>
+          <!-- Data collection points -->
+          <circle cx="200" cy="10" r="6" fill="none" stroke="rgba(56,189,208,0.5)" stroke-width="1.5"/>
+          <circle cx="200" cy="10" r="2.5" fill="rgba(56,189,208,0.6)"/>
+          <circle cx="200" cy="10" r="10" fill="none" stroke="rgba(56,189,208,0.15)" stroke-width="1" class="ping ping-1"/>
+
+          <circle cx="500" cy="10" r="6" fill="none" stroke="rgba(56,189,208,0.5)" stroke-width="1.5"/>
+          <circle cx="500" cy="10" r="2.5" fill="rgba(56,189,208,0.6)"/>
+          <circle cx="500" cy="10" r="10" fill="none" stroke="rgba(56,189,208,0.15)" stroke-width="1" class="ping ping-2"/>
+
+          <circle cx="800" cy="10" r="6" fill="none" stroke="rgba(56,189,208,0.5)" stroke-width="1.5"/>
+          <circle cx="800" cy="10" r="2.5" fill="rgba(56,189,208,0.6)"/>
+          <circle cx="800" cy="10" r="10" fill="none" stroke="rgba(56,189,208,0.15)" stroke-width="1" class="ping ping-3"/>
+        </svg>
+      </div>
+
+      <!-- USV Boat (animated) -->
+      <div class="usv-boat">
+        <svg viewBox="0 0 120 60" fill="none">
+          <!-- Hull -->
+          <path d="M10,35 L25,45 L95,45 L110,35" stroke="#38bdd0" stroke-width="1.8" fill="rgba(56,189,208,0.05)"/>
+          <!-- Cabin -->
+          <rect x="55" y="20" width="30" height="15" rx="2" stroke="#38bdd0" stroke-width="1.5" fill="rgba(56,189,208,0.08)"/>
+          <!-- Small window -->
+          <rect x="75" y="24" width="6" height="7" rx="1" stroke="#38bdd0" stroke-width="1" fill="rgba(56,189,208,0.15)"/>
+          <!-- Mast -->
+          <line x1="70" y1="5" x2="70" y2="20" stroke="#38bdd0" stroke-width="1.5"/>
+          <!-- Antenna cross -->
+          <line x1="65" y1="8" x2="75" y2="8" stroke="#38bdd0" stroke-width="1.2"/>
+          <!-- Antenna tip -->
+          <circle cx="70" cy="5" r="1.5" fill="#38bdd0"/>
+          <!-- Deck line -->
+          <line x1="30" y1="35" x2="105" y2="35" stroke="#38bdd0" stroke-width="1" opacity="0.5"/>
+        </svg>
+      </div>
+
+      <!-- Bottom wireframe waves -->
+      <svg class="wireframe-waves" viewBox="0 0 1600 100" preserveAspectRatio="none">
+        <defs>
+          <clipPath id="waveClip">
+            <rect x="0" y="0" width="1600" height="100"/>
+          </clipPath>
+        </defs>
+        <g clip-path="url(#waveClip)">
+          <path d="M0,30 Q50,10 100,30 Q150,50 200,30 Q250,10 300,30 Q350,50 400,30 Q450,10 500,30 Q550,50 600,30 Q650,10 700,30 Q750,50 800,30 Q850,10 900,30 Q950,50 1000,30 Q1050,10 1100,30 Q1150,50 1200,30 Q1250,10 1300,30 Q1350,50 1400,30 Q1450,10 1500,30 Q1550,50 1600,30" fill="none" stroke="rgba(180,200,220,0.15)" stroke-width="0.8"/>
+          <path d="M0,35 Q50,15 100,35 Q150,55 200,35 Q250,15 300,35 Q350,55 400,35 Q450,15 500,35 Q550,55 600,35 Q650,15 700,35 Q750,55 800,35 Q850,15 900,35 Q950,55 1000,35 Q1050,15 1100,35 Q1150,55 1200,35 Q1250,15 1300,35 Q1350,55 1400,35 Q1450,15 1500,35 Q1550,55 1600,35" fill="none" stroke="rgba(180,200,220,0.12)" stroke-width="0.8"/>
+          <path d="M0,40 Q50,20 100,40 Q150,60 200,40 Q250,20 300,40 Q350,60 400,40 Q450,20 500,40 Q550,60 600,40 Q650,20 700,40 Q750,60 800,40 Q850,20 900,40 Q950,60 1000,40 Q1050,20 1100,40 Q1150,60 1200,40 Q1250,20 1300,40 Q1350,60 1400,40 Q1450,20 1500,40 Q1550,60 1600,40" fill="none" stroke="rgba(180,200,220,0.1)" stroke-width="0.8"/>
+          <path d="M0,45 Q50,25 100,45 Q150,65 200,45 Q250,25 300,45 Q350,65 400,45 Q450,25 500,45 Q550,65 600,45 Q650,25 700,45 Q750,65 800,45 Q850,25 900,45 Q950,65 1000,45 Q1050,25 1100,45 Q1150,65 1200,45 Q1250,25 1300,45 Q1350,65 1400,45 Q1450,25 1500,45 Q1550,65 1600,45" fill="none" stroke="rgba(180,200,220,0.08)" stroke-width="0.8"/>
+          <path d="M0,50 Q50,30 100,50 Q150,70 200,50 Q250,30 300,50 Q350,70 400,50 Q450,30 500,50 Q550,70 600,50 Q650,30 700,50 Q750,70 800,50 Q850,30 900,50 Q950,70 1000,50 Q1050,30 1100,50 Q1150,70 1200,50 Q1250,30 1300,50 Q1350,70 1400,50 Q1450,30 1500,50 Q1550,70 1600,50" fill="none" stroke="rgba(180,200,220,0.06)" stroke-width="0.8"/>
+          <!-- Vertical grid lines -->
+          <line x1="100" y1="25" x2="100" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="200" y1="25" x2="200" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="300" y1="25" x2="300" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="400" y1="25" x2="400" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="500" y1="25" x2="500" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="600" y1="25" x2="600" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="700" y1="25" x2="700" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="800" y1="25" x2="800" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="900" y1="25" x2="900" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="1000" y1="25" x2="1000" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="1100" y1="25" x2="1100" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="1200" y1="25" x2="1200" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="1300" y1="25" x2="1300" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="1400" y1="25" x2="1400" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+          <line x1="1500" y1="25" x2="1500" y2="55" stroke="rgba(180,200,220,0.04)" stroke-width="0.5"/>
+        </g>
+      </svg>
+
+      <!-- Bottom bar -->
+      <div class="bottom-bar"></div>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS -->
+  <section id="solutions" style="background: var(--color-bg-light);">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Our Solution</p>
+        <h2 class="section-title">How AMWA Works</h2>
+        <p class="section-subtitle">A modular, end-to-end platform delivering real-time water quality intelligence from sensor to screen.</p>
+      </div>
+
+      <!-- 01 Modular Sensors -->
+      <div class="solution-item">
+        <div class="solution-text">
+          <div class="solution-number">01</div>
+          <h3>Modular Sensors</h3>
+          <p>Multiparameter sensors measure a wide range of water quality parameters simultaneously. Built to be modular and configurable for any waterway and operational need.</p>
+        </div>
+        <div class="solution-image">
+          <img src="images/circuit-board.jpg" alt="Circuit Board Setup - Modular Sensor Hardware">
+        </div>
+      </div>
+
+      <!-- 02 USV Platform -->
+      <div class="solution-item reverse">
+        <div class="solution-text">
+          <div class="solution-number">02</div>
+          <h3>USV Platform</h3>
+          <p>Unmanned surface vehicles navigate hazardous and remote waterways autonomously, collecting multipoint data without putting personnel at risk.</p>
+        </div>
+        <div class="solution-image">
+          <img src="images/usv.jpg" alt="Unmanned Surface Vehicle on water">
+        </div>
+      </div>
+
+      <!-- 03 Water Catchments -->
+      <div class="solution-item">
+        <div class="solution-text">
+          <div class="solution-number">03</div>
+          <h3>Water Catchments</h3>
+          <p>AMWA deploys across lakes, rivers, and catchment systems, collecting multipoint data across the full catchment in real time for comprehensive environmental oversight.</p>
+        </div>
+        <div class="solution-image">
+          <img src="images/lake.jpg" alt="Autumn at the lake - Water Catchment">
+        </div>
+      </div>
+
+      <!-- 04 Cloud Platform -->
+      <div class="solution-item reverse">
+        <div class="solution-text">
+          <div class="solution-number">04</div>
+          <h3>Cloud Platform</h3>
+          <p>Real-time data transmission to a secure cloud platform with AI-driven anomaly detection, enabling instant alerts and continuous environmental awareness.</p>
+        </div>
+        <div class="solution-image">
+          <img src="images/cloud.webp" alt="Cloud Data Management Platform">
+        </div>
+      </div>
+
+      <!-- 05 Timely Insights -->
+      <div class="solution-item">
+        <div class="solution-text">
+          <div class="solution-number">05</div>
+          <h3>Timely Insights</h3>
+          <p>Live water quality intelligence delivered to any device. Decisions made on current data, not delayed lab reports.</p>
+        </div>
+        <div class="solution-image">
+          <img src="images/dashboard.jpg" alt="Data Dashboard Display">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <h2>Ready to Monitor Smarter?</h2>
+      <p>Get in touch to learn how AMWA can transform your water quality monitoring.</p>
+      <a href="about.html#contact" class="btn btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Hydro-Sense Technologies Pty. Ltd. ABN 65672340126</p>
+    </div>
+  </footer>
+
+</body>
+</html>
